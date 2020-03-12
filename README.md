@@ -1,18 +1,20 @@
 # C++ 算法
-> 参考 [C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus) 库，但代码稍有不同，主要用于练手所用
+> 本项目参考多种语言算法实现，并根据自己的理解进行C++的实现
 
 ## 项目导览
-- [排序算法](./sorting/README.md)
-- other
+- 猛戳 👉[排序算法](./sorting/README.md)
+- Other
 
 ## Run
+> 以[sorting/QuickSort.cpp](./sorting/QuickSort.cpp)文件为例运行步骤如下：
 
-### 以[QuickSort.cpp](./sorting/QuickSort.cpp)文件为例运行步骤如下：
-1. 进入对应目录 `cd sorting`
-2. 编译cpp文件 `g++ QuickSort.cpp ./lib/DoubleVector.cpp` ，默认会输出 `a.out` 文件 (具体命令视情况而定)
-3. 执行编译后的文件 `./a.out`
+### Normal Run
+- Enter target directory `cd sorting`
+- Compile `g++ QuickSort.cpp ./lib/QuickSort.cpp` ，默认会输出 `a.out` 文件 (具体命令视情况而定)
+- Run `./a.out`
 
-## Fast Run
-### 以[QuickSort.cpp](./sorting/QuickSort.cpp)文件为例运行步骤如下：
-1. Compile `make compileSorting TARGET=./sorting/QuickSort.cpp`
-2. Run `make runSorting`
+### Fast Run
+- Compile & Run `make run ./sorting/QuickSort.cpp`
+
+## Reference Link
+- [C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)
