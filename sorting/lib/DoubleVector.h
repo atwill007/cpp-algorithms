@@ -7,11 +7,11 @@ using namespace std;
 /**
  * 用于在命令行输入dobule型向量的元素
  */
-vector<double> cinDoubleVector ();
+vector<double> cinDoubleVector();
 
 /**
  * 用于在命令行输出dobule型向量的元素
  */
-int coutDoubleVector (vector<double>);
+int coutDoubleVector(vector<double>);
 
 #endif

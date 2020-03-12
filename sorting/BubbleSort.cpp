@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>    // 👇用到了向量
-#include <algorithm> // 👇用到了ostream_iterator
+#include <vector>               // 👇用到了向量
+#include <algorithm>            // 👇用到了ostream_iterator
 #include "./lib/DoubleVector.h" // 自定义Double型向量输入输出工具头文件
 using namespace std;
 

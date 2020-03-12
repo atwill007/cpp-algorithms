@@ -3,7 +3,8 @@
 
 using namespace std;
 
-vector<double> cinDoubleVector () {
+vector<double> cinDoubleVector()
+{
   vector<double> vList; // 声明排序向量vList
 
   int len; // 声明数组长度len
@@ -26,10 +27,10 @@ vector<double> cinDoubleVector () {
   return vList;
 }
 
-int coutDoubleVector (vector<double> sortV) {
+int coutDoubleVector(vector<double> sortV)
+{
   cout << "排序后的数组为: "
        << endl;
   copy(sortV.begin(), sortV.end(), ostream_iterator<double>(cout, "\n")); // 向量包含的元素
   return 0;
 }
-

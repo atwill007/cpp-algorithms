@@ -26,12 +26,15 @@ int main()
   return 0;
 }
 
-vector<double> quickSort (vector<double> vList) {
-  if (vList.size() <= 1) return vList;
+vector<double> quickSort(vector<double> vList)
+{
+  if (vList.size() <= 1)
+    return vList;
   double pivot = vList[0]; // 取第一个元素作为参考
   vector<double> leftV;
   vector<double> rightV;
-  for(int i = 1; i < vList.size(); i++) {
+  for (int i = 1; i < vList.size(); i++)
+  {
     cout << "for " << i << endl;
     if (vList[i] < pivot)
       // cout << "qs: " << leftV[leftV.size()] << endl;
@@ -48,4 +51,3 @@ vector<double> quickSort (vector<double> vList) {
   newV.insert(newV.end(), rightV.begin(), rightV.end());
   return newV;
 }
-
