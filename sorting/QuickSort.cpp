@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include "./lib/DoubleVector.h"
+
 using namespace std;
 
 /**
@@ -12,18 +14,14 @@ using namespace std;
  * 参考链接: https://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html
  */
 
-vector<double> cinDobuleVector();
-
 int main()
 {
-  vector<double> vList = cinDobuleVector();
+  vector<double> vList = cinDoubleVector();
 
   vector<double> quickSort(vector<double>);
   vector<double> sortV = quickSort(vList);
 
-  cout << "排序后的数组为: "
-       << endl;
-  copy(sortV.begin(), sortV.end(), ostream_iterator<double>(cout, "\n")); // 向量包含的元素
+  coutDoubleVector(sortV);
 
   return 0;
 }
@@ -51,25 +49,3 @@ vector<double> quickSort (vector<double> vList) {
   return newV;
 }
 
-vector<double> cinDobuleVector () {
-  vector<double> vList; // 声明排序向量vList
-
-  int len; // 声明数组长度len
-  cout << "请输入数组长度: "
-       << endl;
-  cin >> len;
-  cout << "您输入的数组长度为: "
-       << len
-       << endl;
-
-  // 定义临时变量用于输入
-  double number;
-  for (int i = 0; i < len; i++)
-  {
-    cout << "请输入数组第" << i + 1 << "个元素的值: " << endl;
-    cin >> number;
-    vList.push_back(number);
-  }
-
-  return vList;
-}
